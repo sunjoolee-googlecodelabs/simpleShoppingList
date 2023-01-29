@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleShoppingList"
         tools:targetApi="31">
+        <activity android:name=".AddItemActivity"
+            android:label = "AddItemActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "googleCodelabs.simpleshoppinglist.AddItemActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
